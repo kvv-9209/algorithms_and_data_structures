@@ -1,0 +1,13 @@
+@startuml
+start
+:value, pow/
+if (pow == 1) then (нет)
+     while (pow > 1) is (да)
+         :value * power(value, pow - 1)/
+     endwhile
+else (да)
+:значение равно value;
+endif
+:result;
+end
+@enduml
